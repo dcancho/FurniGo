@@ -1,0 +1,9 @@
+@use 'sass:map';
+
+@mixin apply-typography($typography-level) {
+	font-family: map.get($typography-level, 'font-family');
+	font-weight: map.get($typography-level, 'font-weight');
+	font-size: map.get($typography-level, 'font-size');
+	line-height: map.get($typography-level, 'line-height');
+	letter-spacing: map.get($typography-level, 'letter-spacing');
+};

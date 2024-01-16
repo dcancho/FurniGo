@@ -1,0 +1,28 @@
+@use 'sass:map'
+@use '@angular/material' as mat
+@use './../../../styles/typography-mixins.scss' as mixins
+@import './../../../custom-theme.scss'
+@import './../../../styles/furnigo-typography.scss'
+
+.component-wrapper
+	background-color: mat.get-theme-color($FurniGo-theme, primary, 50)
+	width: 100%
+	display: flex
+	justify-content: center
+
+.toolbar
+	background-color: mat.get-theme-color($FurniGo-theme, primary, 50)
+	color: mat.get-theme-color($FurniGo-theme, primary,50-contrast)
+	display: fle
+	flex-direction: row
+	justify-content: space-between
+	width: 80%
+
+.actions
+	display: flex
+	flex-direction: row
+	gap: 1rem
+
+.action-button
+	@include mixins.apply-typography($label-large)
+	border-radius: 100px

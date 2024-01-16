@@ -1,0 +1,107 @@
+@use "@angular/material" as mat;
+
+$display-large: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 400,
+  $font-size: 57px,
+  $line-height: 1.122,
+  $letter-spacing: 0,
+);
+$display-medium: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 400,
+  $font-size: 45px,
+  $line-height: 1.155,
+  $letter-spacing: 0,
+);
+$display-small: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 400,
+  $font-size: 36px,
+  $line-height: 1.222,
+  $letter-spacing: 0,
+);
+$headline-large: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 400,
+  $font-size: 32px,
+  $line-height: 1.25,
+  $letter-spacing: 0,
+);
+$headline-medium: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 400,
+  $font-size: 28px,
+  $line-height: 1.285,
+  $letter-spacing: 0,
+);
+$headline-small: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 400,
+  $font-size: 24px,
+  $line-height: 1.333,
+  $letter-spacing: 0,
+);
+$title-large: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 400,
+  $font-size: 22px,
+  $line-height: 1.273,
+  $letter-spacing: 0,
+);
+$title-medium: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 500,
+  $font-size: 16px,
+  $line-height: 1.5,
+  $letter-spacing: 0,
+);
+$title-small: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 500,
+  $font-size: 14px,
+  $line-height: 1.429,
+  $letter-spacing: 0,
+);
+$body-large: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 400,
+  $font-size: 16px,
+  $line-height: 1.5,
+  $letter-spacing: 0,
+);
+$body-medium: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 400,
+  $font-size: 14px,
+  $line-height: 1.429,
+  $letter-spacing: 0,
+);
+$body-small: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 400,
+  $font-size: 12px,
+  $line-height: 1.333,
+  $letter-spacing: 0,
+);
+$label-large: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 500,
+  $font-size: 14px,
+  $line-height: 1.429,
+  $letter-spacing: 0,
+);
+$label-medium: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 500,
+  $font-size: 12px,
+  $line-height: 1.333,
+  $letter-spacing: 0,
+);
+$label-small: mat.define-typography-level(
+  $font-family: "Roboto",
+  $font-weight: 500,
+  $font-size: 11px,
+  $line-height: 1.455,
+  $letter-spacing: 0,
+);
