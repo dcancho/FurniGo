@@ -1,0 +1,111 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$custom-primary: (
+	50: #f7e8e5,
+	100: #f6cab8,
+	200: #f0a98a,
+	300: #ea895b,
+	400: #e67137,
+	500: #e25b0e,
+	600: #d8560a,
+	700: #ca4f05,
+	800: #bd4803,
+	900: #a43c00,
+	contrast: (
+		50: black,
+		100: black,
+		200: black,
+		300: black,
+		400: black,
+		500: #ffffff,
+		600: #ffffff,
+		700: #ffffff,
+		800: #ffffff,
+		900: #ffffff,
+	)
+);
+
+$custom-accent: (
+	50: #ececec,
+	100: #d4cdcb,
+	200: #b9aba6,
+	300: #9e8981,
+	400: #8b7065,
+	500: #77574a,
+	600: #6b4e43,
+	700: #5b4239,
+	800: #4c3630,
+	900: #3c2925,
+	contrast: (
+		50: black,
+		100: black,
+		200: black,
+		300: black,
+		400: #ffffff,
+		500: #ffffff,
+		600: #ffffff,
+		700: #ffffff,
+		800: #ffffff,
+		900: #ffffff,
+	)
+);
+
+$custom-warn: (
+	50: #ffebee,
+	100: #ffcdd2,
+	200: #f19a9a,
+	300: #e77372,
+	400: #f2534f,
+	500: #f64234,
+	600: #e83833,
+	700: #d62e2e,
+	800: #c92726,
+	900: #ba1a1a,
+	contrast: (
+		50: black,
+		100: black,
+		200: black,
+		300: black,
+		400: black,
+		500: #ffffff,
+		600: #ffffff,
+		700: #ffffff,
+		800: #ffffff,
+		900: #ffffff,
+	)
+);
+
+$FurniGo-primary: mat.define-palette($custom-primary, 900);
+$FurniGo-accent: mat.define-palette($custom-accent, 500);
+$FurniGo-warn: mat.define-palette($custom-warn, 900);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$FurniGo-theme: mat.define-light-theme((
+  color: (
+    primary: $FurniGo-primary,
+    accent: $FurniGo-accent,
+    warn: $FurniGo-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($FurniGo-theme);
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
