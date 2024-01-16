@@ -1,0 +1,22 @@
+@use './../../../styles/typography-mixins.scss' as mixins
+@import './../../../styles/furnigo-typography.scss'
+
+.component-wrapper
+	display: flex
+	justify-content: center
+	min-width: 9.5rem
+
+.user-picture
+	height: 2.25rem
+	width: 2.25rem
+	border-radius: 100%
+
+.tag-container
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+	width: 100%
+
+.user-name
+	@include mixins.apply-typography($title-medium)

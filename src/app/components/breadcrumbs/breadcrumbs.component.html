@@ -1,1 +1,14 @@
-<p>breadcrumbs works!</p>
+<div class="component-wrapper">
+  <div class="breadcrumb-container">
+    <span class="breadcrumbs">
+      @for (breadcrumb of breadcrumbs; track $index) {
+				<a class="breadcrumb" href="{{ breadcrumb.url }}">
+					{{ breadcrumb.name }}
+				</a>
+				@if (!$last) {
+					<span>&nbsp;&gt;&nbsp;</span>
+				} 
+			}
+    </span>
+  </div>
+</div>

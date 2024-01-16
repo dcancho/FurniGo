@@ -9,6 +9,7 @@
 	width: 100%
 	display: flex
 	justify-content: center
+	max-height: 4rem
 
 .toolbar
 	background-color: mat.get-theme-color($FurniGo-theme, primary, 50)
@@ -18,10 +19,18 @@
 	justify-content: space-between
 	width: 80%
 
+.header
+	display: flex
+	flex-direction: row
+	align-items: center
+	row-gap: 1rem
+	@include mixins.apply-typography($title-large)
+
 .actions
 	display: flex
 	flex-direction: row
 	gap: 1rem
+	align-items: center
 
 .action-button
 	@include mixins.apply-typography($label-large)
