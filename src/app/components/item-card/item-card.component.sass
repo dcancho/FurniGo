@@ -1,0 +1,79 @@
+@use './../../../styles/typography-mixins.scss' as mixins
+@use '@angular/material' as mat
+@import './../../../custom-theme.scss'
+@import './../../../styles/furnigo-typography.scss'
+
+$card-width: 32rem
+$card-height: 12rem
+
+.component-wrapper
+	display: flex
+	justify-content: center
+	align-items: center
+
+mat-card
+	background-color: mat.get-theme-color($FurniGo-theme, primary, 50)
+	display: flex
+	flex-direction: row
+	width: $card-width
+	height: $card-height
+
+.card-info
+	box-sizing: border-box
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	padding: 1rem
+	width: calc( $card-width - $card-height )
+
+	* 
+		padding: 0
+		margin: 0
+
+mat-card-header
+	display: block
+	padding: 0
+	margin: 0
+	width: 100%
+
+.card-headline
+	padding: 0
+	margin: 0
+	@include mixins.apply-typography($headline-large)
+	overflow: hidden
+	text-overflow: ellipsis
+	white-space: nowrap
+	width: 100%
+
+.card-subhead
+	padding: 0
+	margin: 0
+	@include mixins.apply-typography($title-medium)
+
+mat-card-content 
+	max-width: 100%
+	p
+	padding: 0
+	margin: 0
+	@include mixins.apply-typography($body-medium)
+
+.card-image
+	display: flex
+	flex-direction: column
+	width: $card-height
+	height: $card-height
+
+img
+	height: 100%
+	width: 100%
+	object-fit: cover
+	object-position: center
+
+button
+	border-radius: 100px
+	min-width: 6rem
+	@include mixins.apply-typography($label-large)
+
+.progress-symbol
+	color: red
+	
