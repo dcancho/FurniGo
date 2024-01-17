@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
 import { ItemCardComponent } from './components/item-card/item-card.component';
+import { OfferCardComponent } from './components/offer-card/offer-card.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { ItemCardComponent } from './components/item-card/item-card.component';
 		RouterOutlet, 
 		NavbarComponent,
 		BreadcrumbsComponent,
-		ItemCardComponent
+		ItemCardComponent,
+		OfferCardComponent
 	],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
