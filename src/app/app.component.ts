@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
-import { ItemCardComponent } from './components/item-card/item-card.component';
-import { OfferCardComponent } from './components/offer-card/offer-card.component';
+import { ItemModelCardComponent } from './components/item-model-card/item-model-card.component';
+
 
 @Component({
   selector: 'app-root',
@@ -14,8 +14,7 @@ import { OfferCardComponent } from './components/offer-card/offer-card.component
 		RouterOutlet, 
 		NavbarComponent,
 		BreadcrumbsComponent,
-		ItemCardComponent,
-		OfferCardComponent
+		ItemModelCardComponent
 	],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'

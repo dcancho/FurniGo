@@ -1,0 +1,59 @@
+@use '@angular/material' as mat
+@use './../../../styles/typography-mixins.scss' as mixins
+@import './../../../custom-theme.scss'
+@import './../../../styles/furnigo-typography.scss'
+
+$card-width: 26rem
+$card-height: 36rem
+
+mat-card
+	background-color: mat.get-theme-color($FurniGo-theme, primary, 50)
+	display: flex
+	flex-direction: column
+	padding: 1rem
+	width: $card-width
+	min-height: $card-height
+
+.model-viewer
+	width: calc(#{$card-width} - 2rem)
+	height: calc(#{$card-width} - 2rem)
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5)
+	border-radius: 8px
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.order-name
+	@include mixins.apply-typography($headline-large)
+
+.order-number
+	@include mixins.apply-typography($title-medium)
+
+mat-card-header
+	padding: 0px
+	display: flexbox
+	flex-direction: column
+
+.card-content
+	display: flex
+	flex-direction: column
+	flex-grow: 1  // Grow
+	padding: 0.5rem 0rem
+	justify-content: space-between
+	mat-card-header, mat-card-content
+		padding: 0px
+	.workshop-name
+		@include mixins.apply-typography($title-medium)
+	p
+		@include mixins.apply-typography($body-medium)
+		margin: 0px
+
+mat-card-actions
+	display: flex
+	flex-direction: row
+	column-gap: 1rem
+	justify-content: end
+
+button
+	border-radius: 50px
