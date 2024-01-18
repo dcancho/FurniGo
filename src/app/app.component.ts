@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
 import { ItemModelCardComponent } from './components/item-model-card/item-model-card.component';
+import { ItemThreeDViewerComponent } from './components/item-three-d-viewer/item-three-d-viewer.component';
 
 
 @Component({
@@ -14,7 +15,7 @@ import { ItemModelCardComponent } from './components/item-model-card/item-model-
 		RouterOutlet, 
 		NavbarComponent,
 		BreadcrumbsComponent,
-		ItemModelCardComponent
+		ItemThreeDViewerComponent
 	],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
