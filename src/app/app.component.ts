@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
-import { ItemModelCardComponent } from './components/item-model-card/item-model-card.component';
+import { OrderDetailsComponent } from './components/order-details/order-details.component';
 import { ItemThreeDViewerComponent } from './components/item-three-d-viewer/item-three-d-viewer.component';
 
 
@@ -15,7 +15,7 @@ import { ItemThreeDViewerComponent } from './components/item-three-d-viewer/item
 		RouterOutlet, 
 		NavbarComponent,
 		BreadcrumbsComponent,
-		ItemThreeDViewerComponent
+		OrderDetailsComponent,
 	],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
