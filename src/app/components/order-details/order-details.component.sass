@@ -1,0 +1,37 @@
+@use './../../../styles/typography-mixins.scss' as mixins
+@use '@angular/material' as mat
+@import './../../../custom-theme.scss'
+@import './../../../styles/furnigo-typography.scss'
+
+
+.display-large
+	@include mixins.apply-typography($display-large)
+
+.headline-small
+	@include mixins.apply-typography($headline-small)
+
+.title-large
+	@include mixins.apply-typography($title-large)
+
+.component-wrapper
+	display: flex
+	justify-content: center
+	align-items: center
+
+.details-box
+	width: 100%
+
+.header
+	display: flex
+	width: 100%
+	flex-direction: column
+	justify-content: start
+
+.contents
+	margin-top: 2rem
+	div
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		*
+			width: 50%

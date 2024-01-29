@@ -1,0 +1,52 @@
+@use './../../../styles/typography-mixins.scss' as mixins
+@use '@angular/material' as mat
+@import './../../../custom-theme.scss'
+@import './../../../styles/furnigo-typography.scss'
+
+$card-width: 40rem
+$card-height: 6rem
+
+.component-wrapper
+	display: flex
+	justify-content: center
+	align-items: center
+
+mat-card
+	background-color: mat.get-theme-color($FurniGo-theme, primary, 50)
+	display: flex
+	flex-direction: row
+	padding: 0rem 1rem
+	column-gap: 1rem
+	width: $card-width
+	height: $card-height
+
+.user-picture
+	flex-grow: 0  // Don't grow
+	display: flex
+	justify-content: center
+	align-items: center
+
+.card-content
+	display: flex
+	flex-direction: column
+	flex-grow: 1  // Grow
+	padding: 0.5rem 0rem
+	justify-content: space-between
+	mat-card-header, mat-card-content
+		padding: 0px
+	.workshop-name
+		@include mixins.apply-typography($title-medium)
+	p
+		@include mixins.apply-typography($body-medium)
+		margin: 0px
+
+mat-card-actions
+	padding: 0rem
+	flex-grow: 0  // Don't grow
+	button
+		@include mixins.apply-typography($label-large)
+		border-radius: 50px
+
+.user-picture
+	img
+		border-radius: 50px
