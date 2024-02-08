@@ -1,0 +1,9 @@
+<div id="order-list">
+	@for (item of items; track item){
+		<app-item-card [order]="item"></app-item-card>
+	} @empty {
+		<p>
+			No orders yet.
+		</p>
+	}
+</div>

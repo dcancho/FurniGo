@@ -1,0 +1,16 @@
+@use './../../../styles/typography-mixins.scss' as mixins
+@use '@angular/material' as mat
+@import './../../../custom-theme.scss'
+@import './../../../styles/furnigo-typography.scss'
+	
+#order-list
+	padding-top: 2rem
+	display: flex
+	flex-wrap: wrap
+	gap: 1rem
+	justify-content: center
+
+
+
+p
+	@include mixins.apply-typography($title-large)

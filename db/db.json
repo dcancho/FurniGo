@@ -1,0 +1,36 @@
+{
+  "orders" : [
+		{
+			"id": 1,
+			"title": "Order 1",
+			"clientId": 101,
+			"budget": 5000,
+			"status": "inline",
+			"dueDate": "2022-12-31T00:00:00.000Z",
+			"details": "Details for Order 1"
+		},
+		{
+			"id": 2,
+			"title": "Order 2",
+			"clientId": 102,
+			"budget": 6000,
+			"status": "building",
+			"dueDate": "2023-01-31T00:00:00.000Z",
+			"details": "Details for Order 2"
+		},
+		{
+			"id": 3,
+			"title": "Order 3",
+			"clientId": 103,
+			"budget": 7000,
+			"status": "finished",
+			"dueDate": "2023-02-28T00:00:00.000Z",
+			"details": "Details for Order 3"
+		}
+	],
+	"clients" : [
+		{
+			"id": 101,
+			"name": "Client 1",
+			"email": "
+}
